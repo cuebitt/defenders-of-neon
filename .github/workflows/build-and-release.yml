@@ -3,27 +3,15 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
-
-    steps:
-      - name: Release Please
-        uses: googleapis/release-please-action@v4
-        id: release
-
   deploy:
-    needs: release
     runs-on: ubuntu-latest
-    if: ${{ needs.release.outputs.release_created }}
 
     steps:
       - name: Checkout repository
@@ -74,7 +62,16 @@ jobs:
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
+      - name: Create GitHub Release
+        uses: "softprops/action-gh-release@v2"
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload Release Artifact
-        run: gh release upload ${{ needs.release.outputs.tag_name }} $(ls ../dists/*.zip)
+        run: gh release upload ${{ github.ref_name }} $(ls ../dists/*.zip)
         env:
           GH_TOKEN: ${{ github.token }}
