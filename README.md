@@ -1,24 +1,24 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/renpy-template/master/game/gui/window_icon.png" alt="Ren'Py Template">
+  <img src="https://raw.githubusercontent.com/remarkablegames/untitled-novembuck-game/master/game/gui/window_icon.png" alt="Untitled Novembuck Game">
 </p>
 
-# Ren'Py Template
+# Untitled Novembuck Game
 
-![release](https://img.shields.io/github/v/release/remarkablegames/renpy-template)
-[![build](https://github.com/remarkablegames/renpy-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/renpy-template/actions/workflows/build.yml)
-[![lint](https://github.com/remarkablegames/renpy-template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/renpy-template/actions/workflows/lint.yml)
+![release](https://img.shields.io/github/v/release/remarkablegames/untitled-novembuck-game)
+[![build](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/build.yml)
+[![lint](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/lint.yml)
 
-📖 Write visual novels with Ren'Py Template.
+📖 Write visual novels with Untitled Novembuck Game.
 
 Play the game:
 
-- [remarkablegames](https://remarkablegames.org/renpy-template)
+- [remarkablegames](https://remarkablegames.org/untitled-novembuck-game)
 
 Or download:
 
-- [Windows](https://github.com/remarkablegames/renpy-template/releases/latest/download/win.zip)
-- [Mac](https://github.com/remarkablegames/renpy-template/releases/latest/download/mac.zip)
-- [Linux](https://github.com/remarkablegames/renpy-template/releases/latest/download/pc.zip)
+- [Windows](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/win.zip)
+- [Mac](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/mac.zip)
+- [Linux](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/pc.zip)
 
 ## Credits
 
@@ -55,18 +55,18 @@ renpy --version
 Clone the repository to the `Projects Directory`:
 
 ```sh
-git clone https://github.com/remarkablegames/renpy-template.git
-cd renpy-template
+git clone https://github.com/remarkablegames/untitled-novembuck-game.git
+cd untitled-novembuck-game
 ```
 
 Rename the project:
 
 ```sh
-git grep -l "Ren'Py Template" | xargs sed -i '' -e "s/Ren'Py Template/My Novel/g"
+git grep -l "Untitled Novembuck Game" | xargs sed -i '' -e "s/Untitled Novembuck Game/My Novel/g"
 ```
 
 ```sh
-git grep -l 'renpy-template' | xargs sed -i '' -e 's/renpy-template/my-novel/g'
+git grep -l 'untitled-novembuck-game' | xargs sed -i '' -e 's/untitled-novembuck-game/my-novel/g'
 ```
 
 Replace the assets:
