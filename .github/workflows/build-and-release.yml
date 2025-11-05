@@ -1,10 +1,8 @@
-name: release-please
+name: build-and-deploy
 on:
   push:
-    branches:
-      - main
     tags:
-      - 'v*'
+      - v*
 
 permissions:
   contents: write
@@ -16,6 +14,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+      
+      - name: Verify tag is on main
+        run: |
+          if ! git branch --contains ${{ github.ref }} | grep -q '^  main$'; then
+            echo "Tag is not on main; skipping release."
+            exit 1
+          fi
 
       - name: Setup Ren'Py
         uses: remarkablegames/setup-renpy@v2
