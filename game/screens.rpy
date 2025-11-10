@@ -299,6 +299,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            textbutton "Music Room" action ShowMenu("music_room")
 
         else:
 
@@ -1499,6 +1500,38 @@ define bubble.expand_area = {
     "thought" : (0, 0, 0, 0),
 }
 
+
+## Music Room ##################################################################
+##
+## Allows the player to re-play music from the game.
+##
+## https://www.renpy.org/doc/html/rooms.html#music-room
+screen music_room:
+    tag menu
+
+    frame:
+        has vbox
+
+        # The buttons that play each track.
+        for track in list(music_tracks.values()):
+            textbutton f"{track['title']} - {track['artist']}" action mr.Play(track["file"])
+
+        null height 20
+
+        # Buttons that let us advance tracks.
+        textbutton "Next" action mr.Next()
+        textbutton "Previous" action mr.Previous()
+
+        null height 20
+
+        # The button that lets the user exit the music room.
+        textbutton "Main Menu" action ShowMenu("main_menu")
+
+    # Start the music playing on entry to the music room.
+    on "replace" action mr.Play()
+
+    # Restore the main menu music upon leaving.
+    on "replaced" action Play("music", "audio/bgm/cafe-restaurant-bossa-nova-music.ogg")
 
 
 ################################################################################

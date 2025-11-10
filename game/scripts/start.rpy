@@ -22,4 +22,20 @@ label start:
 
     # Jump to a label.
 
+    e "This next section should unlock music!"
+
+    e "Here's Pachelbel's Canon."
+
+    play music "audio/bgm/canon-in-d-pachelbel.ogg"
+
+    e "Now, here's Tarrega's Gran Vals."
+
+    play music "audio/bgm/gran-vals-francisco-tarrega.ogg"
+
+    e "Finally, here's Gymnopédie no. 1 by Erik Satie."
+
+    play music "audio/bgm/gymnopedie-1-erik-satie.ogg"
+    
+    e "These songs should now be unlocked in the music room!"
+
     jump end
