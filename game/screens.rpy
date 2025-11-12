@@ -1506,7 +1506,7 @@ define bubble.expand_area = {
 ## Allows the player to re-play music from the game.
 ##
 ## https://www.renpy.org/doc/html/rooms.html#music-room
-screen music_room:
+screen music_room():
     tag menu
 
     frame:
