@@ -1500,6 +1500,16 @@ define bubble.expand_area = {
 }
 
 
+## Skippable scene #############################################################
+##
+## Allows the player to skip to a label using a button.
+##
+## https://lemmasoft.renai.us/forums/viewtopic.php?t=69605
+
+screen scene_skip_btn(dest_label):
+    textbutton "SKIP":
+        align (1., 0.1)
+        action [Hide("scene_skip_btn"), Jump(dest_label)]
 
 ################################################################################
 ## Mobile Variants

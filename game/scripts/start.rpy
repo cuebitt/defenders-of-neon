@@ -22,4 +22,20 @@ label start:
 
     # Jump to a label.
 
+    e "This next section is skippable."
+
+    show screen scene_skip_btn("after_skip")
+
+    e "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    
+    e "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    
+    e "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    
+    e "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+label after_skip:
+
     jump end
+
+
