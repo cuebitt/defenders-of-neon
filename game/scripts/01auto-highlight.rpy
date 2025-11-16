@@ -1,14 +1,13 @@
-"""
- Auto Highlight Ren'Py Module
- 2021 Daniel Westfall <SoDaRa2595@gmail.com>
+#  Auto Highlight Ren'Py Module
+#  2021 Daniel Westfall <SoDaRa2595@gmail.com>
 
- http://twitter.com/sodara9
- I'd appreciate being given credit if you do end up using it! :D Would really
- make my day to know I helped some people out!
- http://opensource.org/licenses/mit-license.php
- Github: https://github.com/SoDaRa/Auto-Highlight
- itch.io: https://wattson.itch.io/renpy-auto-highlight
-"""
+#  http://twitter.com/sodara9
+#  I'd appreciate being given credit if you do end up using it! :D Would really
+#  make my day to know I helped some people out!
+#  http://opensource.org/licenses/mit-license.php
+#  Github: https://github.com/SoDaRa/Auto-Highlight
+#  itch.io: https://wattson.itch.io/renpy-auto-highlight
+
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation files
 # (the "Software"), to deal in the Software without restriction,
@@ -28,7 +27,7 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-""" Setup (IMPORTANT) """
+# Setup (IMPORTANT)
 ## To get this working you'll need to do two additional things along with having this file in your project.
 
 # - First, you'll need to setup your character definitions to support it.
@@ -55,7 +54,7 @@
 #     'eileen_happy'
 #     function SpriteFocus('eileen')
 
-""" General Note """
+# General Note
 # - This file has to be compiled before any scripts that define images that use this.
 #   As such, this file is named 01auto-highlight.rpy to help with that.
 # - Be sure that all images that you want to share the same sprite highlight name
@@ -68,7 +67,7 @@
 # define both = Character('Both', callback=name_callback, cb_name=['luke', 'kot'])
 
 
-""" Variables """
+# Variables
 # - sprite_focus - (Dictionary) It is used to help inform who should be animated
 #                  and occasionaly holds timing data
 # - Has entries added to it in the SpriteFocus focus_check function.
@@ -86,7 +85,7 @@ define sprite_focus = {0:{}}
 #   or not.
 default speaking_char = None
 
-""" Transforms """
+# Transforms
 # - This is the actual transform that will help apply the changes to your sprites.
 # - SpriteFocus is used as a callable class here. The function statement doesn't
 #   pass additional parameters to our function, so I use a callable class here to
