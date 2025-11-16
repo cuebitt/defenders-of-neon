@@ -1517,6 +1517,8 @@ screen scene_skip_btn(dest_label):
         align (0.98, 0.02)
         at skip_cassette
         action [Hide("scene_skip_btn"), Jump(dest_label)]
+
+
 ## Music Room ##################################################################
 ##
 ## Allows the player to re-play music from the game.
@@ -1525,30 +1527,72 @@ screen scene_skip_btn(dest_label):
 screen music_room():
     tag menu
 
-    frame:
-        has vbox
+    use game_menu(_("Music Room")):
+        vbox:
+            spacing 10
+            xfill True
+            yfill True
 
-        # The buttons that play each track.
-        for track in list(music_tracks.values()):
-            textbutton f"{track['title']} - {track['artist']}" action mr.Play(track["file"])
+            frame:
+                xfill True
+                # Let height be determined by content
+                yfill False
+                ymaximum 700
 
-        null height 20
+                viewport:
+                    draggable True
+                    mousewheel True
+                    scrollbars "vertical"
+                    xfill True
+                    yfill False
 
-        # Buttons that let us advance tracks.
-        textbutton "Next" action mr.Next()
-        textbutton "Previous" action mr.Previous()
+                    vbox:
+                        spacing 8
+                        for idx, track in enumerate(list(music_tracks.values())):
+                            vbox:
+                                frame:
+                                    background None
+                                    ypadding 20
+                                    vbox:
+                                        hbox:
+                                            spacing 5
+                                            frame:
+                                                background None
+                                                xfill False
+                                                yfill False
+                                                yalign 0.5
+                                                xsize 100
+                                                text f"{idx+1}":
+                                                    xalign 0.5
+                                                        
+                                            vbox:
+                                                xfill True
+                                                yfill False
+                                                textbutton f"{track['title']}" action mr.Play(track["file"])
+                                                text f"{track['artist']}":
+                                                    xalign 0.007
+                                                    size 24
+                                                    italic True
+                                                    color "#737373"
 
-        null height 20
+                                frame:
+                                    background None
+                                    xfill True
+                                    add Solid("#009cd1", xysize=(1370,2))
 
-        # The button that lets the user exit the music room.
-        textbutton "Main Menu" action ShowMenu("main_menu")
+            frame:
+                xfill True
+                yfill True
 
-    # Start the music playing on entry to the music room.
+                text "todo: Player controls" xalign 0.5 yalign 0.5
+
     on "replace" action mr.Play()
-
-    # Restore the main menu music upon leaving.
     on "replaced" action Play("music", "audio/bgm/cafe-restaurant-bossa-nova-music.ogg")
 
+style accent_line:
+    foreground "#FF6600"  # replace with your game's accent color
+    xmaximum 400
+    ymaximum 2
 
 ################################################################################
 ## Mobile Variants
