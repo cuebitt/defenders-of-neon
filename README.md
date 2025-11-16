@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cuebitt/defenders-of-neon/main/game/gui/window_icon.png" alt="Defenders of Neon">
+  <img src="game/gui/window_icon.png" alt="Defenders of Neon">
 </p>
 
 # Defenders of Neon
@@ -27,7 +27,7 @@ Or download:
 - [BigHufferPuffer](https://bsky.app/profile/bighufferpuffer.bsky.social)
 - [Grufflo](https://bsky.app/profile/grufflo.bsky.social)
 
-### Audio
+### Music
 
 - [KOMODOMODE](https://bsky.app/profile/komodomode.bsky.social)
 
