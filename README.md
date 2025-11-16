@@ -1,24 +1,24 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/remarkablegames/untitled-novembuck-game/master/game/gui/window_icon.png" alt="Untitled Novembuck Game">
+  <img src="https://raw.githubusercontent.com/remarkablegames/defenders-of-neon/master/game/gui/window_icon.png" alt="Defenders of Neon">
 </p>
 
-# Untitled Novembuck Game
+# Defenders of Neon
 
-![release](https://img.shields.io/github/v/release/remarkablegames/untitled-novembuck-game)
-[![build](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/build.yml)
-[![lint](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/untitled-novembuck-game/actions/workflows/lint.yml)
+![release](https://img.shields.io/github/v/release/remarkablegames/defenders-of-neon)
+[![build](https://github.com/remarkablegames/defenders-of-neon/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/defenders-of-neon/actions/workflows/build.yml)
+[![lint](https://github.com/remarkablegames/defenders-of-neon/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablegames/defenders-of-neon/actions/workflows/lint.yml)
 
-📖 Write visual novels with Untitled Novembuck Game.
+📖 Write visual novels with Defenders of Neon.
 
 Play the game:
 
-- [remarkablegames](https://remarkablegames.org/untitled-novembuck-game)
+- [remarkablegames](https://remarkablegames.org/defenders-of-neon)
 
 Or download:
 
-- [Windows](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/win.zip)
-- [Mac](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/mac.zip)
-- [Linux](https://github.com/remarkablegames/untitled-novembuck-game/releases/latest/download/pc.zip)
+- [Windows](https://github.com/remarkablegames/defenders-of-neon/releases/latest/download/win.zip)
+- [Mac](https://github.com/remarkablegames/defenders-of-neon/releases/latest/download/mac.zip)
+- [Linux](https://github.com/remarkablegames/defenders-of-neon/releases/latest/download/pc.zip)
 
 ## Credits
 
@@ -55,18 +55,18 @@ renpy --version
 Clone the repository to the `Projects Directory`:
 
 ```sh
-git clone https://github.com/remarkablegames/untitled-novembuck-game.git
-cd untitled-novembuck-game
+git clone https://github.com/remarkablegames/defenders-of-neon.git
+cd defenders-of-neon
 ```
 
 Rename the project:
 
 ```sh
-git grep -l "Untitled Novembuck Game" | xargs sed -i '' -e "s/Untitled Novembuck Game/My Novel/g"
+git grep -l "Defenders of Neon" | xargs sed -i '' -e "s/Defenders of Neon/My Novel/g"
 ```
 
 ```sh
-git grep -l 'untitled-novembuck-game' | xargs sed -i '' -e 's/untitled-novembuck-game/my-novel/g'
+git grep -l 'defenders-of-neon' | xargs sed -i '' -e 's/defenders-of-neon/my-novel/g'
 ```
 
 Replace the assets:
