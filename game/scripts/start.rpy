@@ -26,17 +26,17 @@ label start:
 
     show screen scene_skip_btn("after_skip")
 
+    play music pachelbels_canon
+
     e "Here's Pachelbel's Canon."
 
-    play music "audio/bgm/canon-in-d-pachelbel.ogg"
+    play music gran_vals
 
     e "Now, here's Tarrega's Gran Vals."
 
-    play music "audio/bgm/gran-vals-francisco-tarrega.ogg"
+    play music gymnopedie_no_1
 
     e "Finally, here's Gymnopédie no. 1 by Erik Satie."
-
-    play music "audio/bgm/gymnopedie-1-erik-satie.ogg"
     
     e "These songs should now be unlocked in the music room!"
 
