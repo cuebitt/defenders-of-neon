@@ -30,7 +30,7 @@ define config.version = "1.0.0-alpha" # x-release-please-version
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-{a=https://github.com/remarkablegames/defenders-of-neon#credits}Credits{/a}
+{a=https://github.com/cuebitt/defenders-of-neon#credits}Credits{/a}
 """)
 
 
@@ -212,4 +212,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-define build.itch_project = "remarkablegames/defenders-of-neon"
+define build.itch_project = "cuebitt/defenders-of-neon"
