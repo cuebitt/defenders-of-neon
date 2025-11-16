@@ -1506,9 +1506,15 @@ define bubble.expand_area = {
 ##
 ## https://lemmasoft.renai.us/forums/viewtopic.php?t=69605
 
+transform skip_cassette:
+    zoom 0.5
+    alpha 0.0
+    linear 0.25 alpha 1.0
+
 screen scene_skip_btn(dest_label):
-    textbutton "SKIP":
-        align (1., 0.1)
+    imagebutton auto "gui/skip_scene/skip_cassette_%s.png":
+        align (0.98, 0.02)
+        at skip_cassette
         action [Hide("scene_skip_btn"), Jump(dest_label)]
 
 ################################################################################

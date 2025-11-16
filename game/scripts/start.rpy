@@ -35,7 +35,7 @@ label start:
     e "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 label after_skip:
-
+    hide screen scene_skip_btn
     jump end
 
 
