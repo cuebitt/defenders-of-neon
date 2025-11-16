@@ -24,6 +24,8 @@ label start:
 
     e "This next section should unlock music!"
 
+    show screen scene_skip_btn("after_skip")
+
     e "Here's Pachelbel's Canon."
 
     play music "audio/bgm/canon-in-d-pachelbel.ogg"
@@ -38,4 +40,8 @@ label start:
     
     e "These songs should now be unlocked in the music room!"
 
+label after_skip:
+    hide screen scene_skip_btn
     jump end
+
+
