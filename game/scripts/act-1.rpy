@@ -1,6 +1,6 @@
 label a1_s1_comic_panels: 
   # BEGIN COMIC SECTION
-  scene bg comic
+  scene bg comic with fade
 
   show expression Text("Placeholder - comic goes here", xalign=0.5, yalign=0.005, color="#71717a") as top_label with dissolve
 
@@ -127,7 +127,7 @@ label a1_s2:
   show phase normal at left, Transform(xalign=.25) with moveinleft
   show jeff normal at right, Transform(xzoom=-1) with moveinright
 
-  p "Everything looks good here. You don’t have to worry about anything, Jeff. As long as I’m around, the Defends of Neon will make sure the Haven Mall is safe."
+  p "Everything looks good here. You don’t have to worry about anything, Jeff. As long as I’m around, the Defenders of Neon will make sure the Haven Mall is safe."
 
   j "Thanks, dude. Ya, I was doing some cleaning while you were all gone. Couldn’t even find a cobweb."
 
@@ -259,7 +259,73 @@ label a1_s2:
 
   hide phase with dissolve
   pause 1.0
-  
-  "...who was he talking to?"
+
+  jump a1_s3
+
+label a1_s3:
+  scene bg black with fade
+
+  stop music
+
+  "Meanwhile, deep inside Limiter's evil lair..."
+
+  play music limiter_theme fadein 1.5 fadeout 0.5
+
+  scene bg limiter base with fade
+  show limiter normal at center with dissolve
+  pause 0.5
+  image d0 = "images/Drone/drone_normal.png"
+  show d0 at left, Transform(xalign=0.15) with dissolve
+
+  l "Well well well…. Isn’t this an interesting result."
+
+  l "Looks like those wretched instrument playing fools are having a little spat."
+
+  l "They should learn a thing or two about following a strong leader, shouldn’t they?"
+
+  "Drone" "Mmmhmmmm."
+
+  "{i}Limiter pats the faceless drone on its head.{/i}"
+
+  l "Ahhh, I do love the muffled noises my drones make."
+
+  l "What I wouldn't give to have those nuisances in that run down mall saying my name through a layer of dronifying goop."
+
+  l "But that leader of theirs, Phase…."
+
+  l "He’s going off on his own now, is he?"
+
+  l "His little stunt today may have caught me off guard, but if he thinks he can do a follow up act like that again and defeat me a second time…."
+
+  l "Why, I do believe that gives me the idea for a new plan."
+
+  l "Drones!"
+
+  # Add three more drones here, two on the left and one on the right
+
+  image d1 = "images/Drone/drone_normal.png"
+  image d2 = "images/Drone/drone_normal.png"
+  image d3 = "images/Drone/drone_normal.png"
+
+  show d1 at left, Transform(xalign=-0.15) with dissolve
+  pause 0.2
+  show d2 at right, Transform(xalign=0.75) with dissolve
+  pause 0.2
+  show d3 at right, Transform(xalign=1.05) with dissolve
+  pause 0.2
+
+  "Drones" "Mmhmmm!"
+
+  l "I’m sure Phase must be feeling very lonely now that he’s all by himself. Let’s go pay him a visit."
+
+  l "He could use a new team to help keep him company."
+
+  l "And I’m such a nice guy, I’d be happy to have him join ours."
+
+  l "Doesn’t that sound nice to all of you?"
+
+  "Drones" "Mmmmhmmmmm!"
+
+  l "Mwehehehehe! AHHHAHAHAHAHHHHHHHA!"
 
   jump end
