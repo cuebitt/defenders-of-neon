@@ -190,7 +190,7 @@ init python:
     build.classify('game/**.png', 'archive')
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.webp', 'archive')
-    build.classify('game/**.rpy', None)
+    build.classify('game/**.rpy', 'archive')
     build.classify('game/**.rpyc', 'archive')
     build.classify('game/**.ogg', 'archive')
     build.classify('game/**.mp3', 'archive')
