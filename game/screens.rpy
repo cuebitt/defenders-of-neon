@@ -560,11 +560,25 @@ screen about():
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 
+            text("""Defenders of Neon, Season 2 Episode 8: "Phase's Solo" is made by:
+
+{a=https://bsky.app/profile/bighufferpuffer.bsky.social}BigHufferPuffer{/a} (Art)
+{a=https://bsky.app/profile/grufflo.bsky.social}Grufflo{/a} (Art)
+{a=https://bsky.app/profile/komodomode.bsky.social}KOMODOMODE{/a} (Music)
+{a=https://bsky.app/profile/zevfox.bsky.social}Zev{/a} (Writing)
+{a=https://bsky.app/profile/cuebitt.rip}Cuebitt{/a} (Programming)
+""")
+
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
+
+            text _("The following third-party modules are used:\n")
+            text _("{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight{/a} and {a=https://wattson.itch.io/kinetic-text-tags}Ren'Py Kinetic Text Tags{/a} by Wattson")
+            text _("{a=https://kigyo.itch.io/speech-pauses-for-renpy}Speech Pauses for Ren'Py{/a} by KigyoDev")
+            text _("{a=https://naoimh-murchan.itch.io/renpy-inline-tooltips}Ren'Py Inline Tooltips{/a} by Naoimh Murchan")
 
 
 style about_label is gui_label
@@ -754,6 +768,12 @@ screen preferences():
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
+                vbox:
+                    style_prefix "check"
+                    label _("Font")
+                    textbutton _("Default") action gui.SetPreference("font", "DejaVuSans.ttf")
+                    textbutton _("OpenDyslexic") action  gui.SetPreference("font", "OpenDyslexic3-Regular.ttf")
+                    textbutton _("Atkinson Hyperlegible") action gui.SetPreference("font", "AtkinsonHyperlegibleNextVF-Variable.ttf")
 
             null height (4 * gui.pref_spacing)
 
@@ -770,6 +790,19 @@ screen preferences():
                     label _("Auto-Forward Time")
 
                     bar value Preference("auto-forward time")
+
+                    null height (4 * gui.pref_spacing)
+                    vbox:
+                        style_prefix "radio"
+                        textbutton _("Speech Pauses") action ToggleField(persistent,"speech_pauses")
+                        
+                        showif persistent.speech_pauses:
+                            vbox at expander:
+                                style_prefix "slider"
+                                label _("Commas")
+                                bar value FieldValue(persistent, "speech_pause_comma", step=.05, style=u'slider', min=0.05, max=1.0)
+                                label _("Sentences")
+                                bar value FieldValue(persistent, "speech_pause_period", step=.05, style=u'slider', min=0.1, max=2.0)
 
                 vbox:
 
