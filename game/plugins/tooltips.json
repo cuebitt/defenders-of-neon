@@ -1,0 +1,9 @@
+{
+	"tooltips": {
+		"elf": {
+			"matches": ["Elf", "Elves", "Elvhen", "elves"],
+			"title": "The Elves",
+			"content": "The Elves are a pointy eared people with a lot of rizz."
+		}
+	}
+}
