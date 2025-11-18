@@ -19,6 +19,11 @@ init python:
       "title": "Mall Theme (The Ghost of Shepherd's Pie - GBML)",
       "artist": "GeoffreyBurch",
       "file": "audio/bgm/the-ghost-of-shepardx27s-pie-glbml-112816.ogg"
+    },
+    "limiter_theme": {
+      "title": "Limiter Theme",
+      "artist": "nickpanek",
+      "file": "audio/bgm/epic-sci-fi-villain-theme-for-cinematic-projects-224750.ogg"
     }
   }
 
