@@ -22,8 +22,10 @@ init python:
     }
   }
 
+  # Create a music room
   mr = MusicRoom(fadeout=1.0)
 
+  # Add music tracks to music room and audio object
   for track_id, track_data in music_tracks.items():
     mr.add(track_data["file"])                    # add to music room
     setattr(audio, track_id, track_data["file"])  # add to audio object

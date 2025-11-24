@@ -1527,6 +1527,8 @@ screen scene_skip_btn(dest_label):
 screen music_room():
     tag menu
 
+    default paused = False
+
     use game_menu(_("Music Room")):
         vbox:
             spacing 10
@@ -1583,8 +1585,30 @@ screen music_room():
             frame:
                 xfill True
                 yfill True
+                padding (50,0)
 
-                text "todo: Player controls" xalign 0.5 yalign 0.5
+                hbox:
+                    spacing 100
+                    hbox:
+                        yalign 0.5
+                        spacing 25
+                        imagebutton auto "gui/music_room/previous_%s.png":
+                            action mr.Previous()
+                        imagebutton auto ("gui/music_room/play_%s.png" if paused else "gui/music_room/pause_%s.png"):
+                            action [mr.TogglePause(), SetScreenVariable("paused", not paused)]
+                        imagebutton auto "gui/music_room/next_%s.png":
+                            action mr.Next()
+
+                    vbox:
+                        hbox:
+                            spacing 25
+                            text "album art" align(0.5, 0.5)
+                            vbox:
+                                spacing 10
+                                text "track title"
+                                text "artist"
+                                text "progress"
+                    
 
     on "replace" action mr.Play()
     on "replaced" action Play("music", "audio/bgm/cafe-restaurant-bossa-nova-music.ogg")
