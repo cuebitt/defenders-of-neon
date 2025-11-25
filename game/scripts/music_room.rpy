@@ -82,10 +82,13 @@ screen music_room():
                         spacing 8
                         for idx, track in enumerate(list(music_tracks.values())):
                             vbox:
+                                yfill False
                                 frame:
                                     background None
                                     ypadding 20
                                     vbox:
+                                        yfill False
+                                        ymaximum 100
                                         hbox:
                                             spacing 5
                                             frame:
@@ -94,9 +97,18 @@ screen music_room():
                                                 yfill False
                                                 yalign 0.5
                                                 xsize 100
-                                                text f"{idx+1}":
-                                                    xalign 0.5
-                                                        
+                                                
+                                                fixed:
+                                                    add (track["album_art"] or "gui/music_room/default_album_art.png"):
+                                                        xalign 0.5
+                                                        yalign 0.5
+                                                        ysize 100
+                                                        xsize 100
+                                                    text f"{idx+1}":
+                                                        xalign 0.5
+                                                        yalign 0.5
+                                                        outlines [(2, "#000000")]
+
                                             vbox:
                                                 xfill True
                                                 yfill False
@@ -119,7 +131,7 @@ screen music_room():
                 padding (50,0)
 
                 hbox:
-                    spacing 100
+                    spacing 50
                     yalign 0.5
                     hbox:
                         align (0.5, 0.5)
@@ -132,25 +144,40 @@ screen music_room():
                         imagebutton auto "gui/music_room/next_%s.png":
                             action [mr.Next(), Function(get_next_track_idx, 1)]
 
-                    vbox:
-                        hbox:
-                            spacing 25
-                            text "album art" align(0.5, 0.5)
-                            vbox:
-                                spacing 10
-                                text (music_tracks[track_ids[current_track_idx]]['title'] if current_track_idx != -1 else 'Not Playing')
-                                text (music_tracks[track_ids[current_track_idx]]['artist'] if current_track_idx != -1 else '-')
-                                
-                                if current_track_idx != -1:
-                                    fixed:
-                                        bar:
-                                            value AudioPositionValue("music", update_interval=0.1)
-                                            xfill True
-                                            ysize 20
-                                        button id "pbar":
-                                            background None
-                                            ymaximum 20
-                                            action Function(lambda: set_bar_value("pbar"))
+                    hbox:
+                        spacing 25
+                        if current_track_idx != -1:
+                            add (track["album_art"] or "gui/music_room/default_album_art.png"):
+                                xalign 0.5
+                                yalign 0.5
+                                ysize 100
+                                xsize 100
+
+                        vbox:
+                            spacing 10
+                            yfill True
+                            frame:
+                                background None
+                                padding (10, 10)
+                                vbox:
+                                    text (music_tracks[track_ids[current_track_idx]]['title'] if current_track_idx != -1 else 'Not Playing')
+                                    text (music_tracks[track_ids[current_track_idx]]['artist'] if current_track_idx != -1 else '-'):
+                                        # xalign 0.007
+                                        size 24
+                                        italic True
+                                        color "#737373"
+
+                            if current_track_idx != -1:
+                                fixed:
+                                    ysize 25
+                                    bar:
+                                        value AudioPositionValue("music", update_interval=0.1)
+                                        xfill True
+                                        ysize 20
+                                    button id "pbar":
+                                        background None
+                                        ymaximum 20
+                                        action Function(lambda: set_bar_value("pbar"))
 
     on "replace" action [Stop("music"), Function(enter_music_room)]
     on "replaced" action Play("music", "audio/bgm/cafe-restaurant-bossa-nova-music.ogg")
