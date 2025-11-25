@@ -4,21 +4,25 @@ init python:
       "title": "Pachelbel's Canon (Canon in D)",
       "artist": "Johann Pachelbel",
       "file": "audio/bgm/canon-in-d-pachelbel.ogg",
+      "album_art": ""
     },
     "gran_vals": {
       "title": "Gran Vals",
       "artist": "Francisco Tarrega",
-      "file": "audio/bgm/gran-vals-francisco-tarrega.ogg"
+      "file": "audio/bgm/gran-vals-francisco-tarrega.ogg",
+      "album_art": ""
     },
     "gymnopedie_no_1": {
       "title": "Gymnopédie no. 1",
       "artist": "Erik Satie",
-      "file": "audio/bgm/gymnopedie-1-erik-satie.ogg"
+      "file": "audio/bgm/gymnopedie-1-erik-satie.ogg",
+      "album_art": ""
     },
     "fur_elise": {
       "title": "Für Elise",
       "artist": "Ludwig van Beethoven",
-      "file": "audio/bgm/fur-elise-beethoven.ogg"
+      "file": "audio/bgm/fur-elise-beethoven.ogg",
+      "album_art": ""
     }
   }
 
