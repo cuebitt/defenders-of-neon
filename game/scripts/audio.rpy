@@ -1,5 +1,11 @@
 init python:
   music_tracks = {
+    "defenders_theme_distorted": {
+      "title": "Defenders of Neon Theme (Distorted) (Band Practice)",
+      "artist": "freesound_community",
+      "file": "audio/bgm/band-practice-67276.ogg",
+      "album_art": ""
+    },
     "peril_theme": {
       "title": "Peril Theme (Dubstep - Imminent Danger)",
       "artist": "AntipodeanWriter",
@@ -40,4 +46,9 @@ init python:
     mr.add(track_data["file"])                    # add to music room
     setattr(audio, track_id, track_data["file"])  # add to audio object
 
+# SFX
 define audio.phase_instrument_sfx = "audio/sfx/electric-guitar-metal-riff-107087.ogg"
+define audio.inhale_exhale_sfx = "audio/sfx/inhale-exhale-230173.ogg"
+define audio.siren_sfx = "audio/sfx/air-raid-siren-sound-effect-241383.ogg"
+define audio.crow_caw_sfx = "audio/sfx/creepy-crow-caw-322991.ogg"
+define audio.record_scratch_sfx = "audio/sfx/record_scratch-108233.ogg"
