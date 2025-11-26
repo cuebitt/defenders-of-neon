@@ -31,7 +31,7 @@ init python:
       "album_art": ""
     },
     "limiter_theme": {
-      "title": "Limiter Theme",
+      "title": "Limiter Theme (Epic Sci-Fi Villain Theme for Cinematic Projects)",
       "artist": "nickpanek",
       "file": "audio/bgm/epic-sci-fi-villain-theme-for-cinematic-projects-224750.ogg",
       "album_art": ""
