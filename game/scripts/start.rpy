@@ -1,47 +1,14 @@
-# The game starts here.
+transform up_lean:
+  # Move the sprite slightly upward
+  yoffset 0
+  rotate 0
+  rotate_pad True
+  transform_anchor True
+  subpixel True
+
+  # Rotate by 2 degrees clockwise and up 100 px
+  easein 0.5 rotate 2 yoffset -100
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg club
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # Jump to a label.
-
-    e "This next section should unlock music!"
-
-    show screen scene_skip_btn("after_skip")
-
-    play music pachelbels_canon
-
-    e "Here's Pachelbel's Canon."
-
-    play music gran_vals
-
-    e "Now, here's Tarrega's Gran Vals."
-
-    play music gymnopedie_no_1
-
-    e "Finally, here's Gymnopédie no. 1 by Erik Satie."
-    
-    e "These songs should now be unlocked in the music room!"
-
-label after_skip:
-    hide screen scene_skip_btn
-    jump end
-
+  jump a1_s1_comic_panels
 

@@ -9,12 +9,11 @@ permissions:
 
 jobs:
   deploy:
-    if: github.event.base_ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Ren'Py
         uses: remarkablegames/setup-renpy@v2
@@ -37,7 +36,7 @@ jobs:
 
       - name: Rename packages
         run: |
-          # e.g., "../dists/untitled-novembuck-game-1.2.3-linux.tar.bz2" -> "../dists/linux.tar.bz2"
+          # e.g., "../dists/defenders-of-neon-1.2.3-linux.tar.bz2" -> "../dists/linux.tar.bz2"
           for filename in ../dists/*; do mv "$filename" "../dists/${filename##*-}"; done
 
       - name: Build web
