@@ -61,7 +61,8 @@ label a1_s1_main:
 
   p "Time to send you back to the coda with a sick riff."
 
-  $ renpy.music.set_volume(0.5, delay=1.0, channel="music")
+  $ prev_mus_vol = _preferences.get_volume('music')
+  $ renpy.music.set_volume(prev_mus_vol * 0.5, delay=1.0, channel="music")
   play sound phase_instrument_sfx loop
 
   c "The goo is retreating!"
@@ -82,7 +83,8 @@ label a1_s1_main:
 
   p "I know I can. Dig this solo and find out for yourself."
 
-  $ renpy.music.set_volume(1.25, delay=0.5, channel='sound')
+  $ prev_sfx_vol = _preferences.get_volume('sound')
+  $ renpy.music.set_volume(prev_sfx_vol * 1.25, delay=0.5, channel='sound')
 
   p "Match my souped up rhythm if you can, Limiter."
 
@@ -93,8 +95,8 @@ label a1_s1_main:
   l "Gaaaaaaaaaaaah! The groove is too powerful! Curse you, Defenders of Neon!"
 
   stop sound fadeout 0.5
-  $ renpy.music.set_volume(1.0, delay=0, channel='sound')
-  $ renpy.music.set_volume(1.0, delay=1.0, channel="music")
+  $ renpy.music.set_volume(prev_sfx_vol, delay=0, channel='sound')
+  $ renpy.music.set_volume(prev_mus_vol, delay=1.0, channel="music")
 
   hide limiter
 
