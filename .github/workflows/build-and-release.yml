@@ -25,7 +25,7 @@ jobs:
           find .
           ! -name "icon.*"
           ! -name "progressive_download.txt"
-          ! -name "version.txt"
+          ! -name "game/version.txt"
           ! -name "web-*"
           ! -path "*/.*"
           ! -path "*game*"
@@ -55,7 +55,7 @@ jobs:
           for i in "web web" "linux.tar.bz2 linux" "mac.zip osx" "win.zip win"
           do
             set -- $i
-            butler push ../dists/$1 ${{ github.repository }}:$2 --userversion-file version.txt
+            butler push ../dists/$1 ${{ github.repository }}:$2 --userversion-file game/version.txt
           done
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}

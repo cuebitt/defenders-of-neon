@@ -4,6 +4,17 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
+init python early:
+  game_ver = "0.0.0"
+
+  try:
+    with renpy.open_file("version.txt", encoding="utf-8") as f:
+      game_ver = f.read()
+      game_ver = game_ver.replace("v", "").strip()
+  except FileNotFoundError:
+    game_ver = "ERROR"
+
+
 
 ## Basics ######################################################################
 
@@ -23,7 +34,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.3.0"
+define config.version = game_ver
 
 
 ## Text that is placed on the game's about screen. Place the text between the
