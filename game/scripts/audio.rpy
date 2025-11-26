@@ -38,6 +38,8 @@ init python:
     }
   }
 
+  music_tracks = {key: music_tracks[key] for key in sorted(music_tracks, key=str.lower)}
+
     # Create a music room
   mr = MusicRoom(fadeout=1.0)
 
