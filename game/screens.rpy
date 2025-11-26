@@ -299,6 +299,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            textbutton "Music Room" action ShowMenu("music_room")
 
         else:
 
@@ -1549,6 +1550,7 @@ screen scene_skip_btn(dest_label):
         align (0.98, 0.02)
         at skip_cassette
         action [Hide("scene_skip_btn"), Jump(dest_label)]
+
 
 ################################################################################
 ## Mobile Variants
