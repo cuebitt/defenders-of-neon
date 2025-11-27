@@ -330,4 +330,4 @@ label a1_s3:
 
   l "Mwehehehehe! AHHHAHAHAHAHHHHHHHA!"
 
-  jump end
+  jump a2_s1
