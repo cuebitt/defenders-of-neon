@@ -6,8 +6,8 @@ transform up_lean:
   transform_anchor True
   subpixel True
 
-  # Rotate by 2 degrees clockwise and up 100 px
-  easein 0.5 rotate 2 yoffset -100
+  # Rotate by 5 degrees clockwise and up 150 px
+  easein 0.5 rotate 5 yoffset -150
 
 label start:
   jump a1_s1_comic_panels
