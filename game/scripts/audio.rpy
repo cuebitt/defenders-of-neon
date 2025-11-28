@@ -50,7 +50,10 @@ init python:
 
 # SFX
 define audio.phase_instrument_sfx = "audio/sfx/electric-guitar-metal-riff-107087.ogg"
+define audio.phase_instrument_sfx_distorted = "audio/sfx/electric-guitar-metal-riff-distorted-107087.ogg"
 define audio.inhale_exhale_sfx = "audio/sfx/inhale-exhale-230173.ogg"
 define audio.siren_sfx = "audio/sfx/air-raid-siren-sound-effect-241383.ogg"
 define audio.crow_caw_sfx = "audio/sfx/creepy-crow-caw-322991.ogg"
 define audio.record_scratch_sfx = "audio/sfx/record_scratch-108233.ogg"
+define audio.splat_sfx = "audio/sfx/cartoon-splat-310479.ogg"
+define audio.guitar_riff_sfx = "audio/sfx/quicklik-47698.ogg"

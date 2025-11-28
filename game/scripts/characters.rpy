@@ -9,6 +9,8 @@ init python:
       speaking_char = name
 
     shown = renpy.get_attributes(speaking_char)
+    if not shown:
+      return
     is_normal = ("normal" in shown)
     is_talk = ("talk" in shown)
 
