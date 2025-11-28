@@ -519,5 +519,309 @@ label a2_s2: # fourth scene, second scene in act 2
 
   j "Yeah…. He’s got the potential to be the best."
 
-  jump end
+  jump a2_s3
 
+label a2_s3:
+  scene bg mall with fade
+
+  play music limiter_theme fadein 0.5 fadeout 0.5
+
+  show limiter normal at left with moveinleft
+
+  $ d1 = "images/Drone/drone_normal.png"
+  $ d2 = "images/Drone/drone_normal.png"
+  $ d3 = "images/Drone/drone_normal.png"
+
+  show d1 at left, Transform(xalign=0.15) with moveinleft
+  show d2 at left, Transform(xalign=0.3) with moveinleft
+  show d3 at left, Transform(xalign=0.45) with moveinleft
+
+  show limiter confident
+
+  l "Yes! YES! I’ll see this mall covered in drone goo before the day is done!"
+
+  show phase normal at right, Transform(xzoom=-1) with moveinright
+
+  show phase confident
+
+  p "Might want to do another sound check on that one, snake face."
+
+  p "As long as I’m here, you’re never going to sell tickets in Haven Mall."
+
+  l "My my my! All by yourself today, are you?"
+
+  l "What happened to the rest of your play mates?"
+
+  show phase angry
+
+  p "Whatever, dude. You wouldn’t understand."
+
+  show phase confident
+
+  p "I beat you all by myself last time, and I can do it again."
+
+  p "Keep your ears open wide while you choke on this sweet jam."
+
+  play sound phase_instrument_sfx_distorted loop fadeout 0.5
+
+  show phase sad
+
+  p "Come on, not now….!"
+
+  l "You might have taken me by surprise last time, but now you’re truly all by yourself."
+
+  l "But don’t you worry about being all alone. You won’t have to be for much longer."
+
+  l "Drones? Go give our newest team member a sticky welcome!"
+
+  stop sound # stop phase keytar
+  "Drones" "Mmmmmm!"
+
+  play sound splat_sfx
+
+  show phase shocked
+
+  p "Oh, bogus! Come on, if I can just play again, I’m sure I can…."
+
+  l "As if you’ll get another chance to play that horrible sounding noise maker again!"
+
+  l "Mwehehehehe! It’s going to feel so good, watching you get dronified."
+
+  show d1 at left, Transform(xalign=-0.25) with move
+  show d2 at left, Transform(xalign=-0.1) with move
+  show d3 at left, Transform(xalign=0.05) with move
+
+  show limiter normal at center, Transform(xalign=0.45) with move
+
+  l "I’ve waited for this for so long."
+
+  l "And when the other rats see how much you’re enjoying working for me, why, I’m sure they’ll ask to be converted right away too."
+
+  l "But it’ll be so much more fun if they struggle first."
+
+  l "Ahhhahhhhahaha!!"
+
+  "Drones" "Mmmmmmmmmmm!!"
+
+  # TODO Music fight theme
+  play music phase_theme fadein 0.5 fadeout 1.0
+
+  s "Hate to slow your tempo, Limiter…."
+
+  c "But you won’t be getting your coils around Phase today!"
+
+  b "Nice call back, guys. A little forced, but it worked."
+
+  hide d1 with dissolve
+  hide d2 with dissolve
+  hide d3 with dissolve
+  
+
+  show limiter shocked at left, Transform(xalign=0.1) with move
+
+  show phase shocked zorder 2 at center with move
+  show boost normal at right, Transform(xalign=0.8, xzoom=-1) with moveinright
+  show swage normal at right, Transform(xalign=0.95, xzoom=-1) with moveinright
+  show crash normal at right, Transform(xalign=1.2, xzoom=-1) with moveinright
+
+  show boost confident
+  show swage confident
+  show crash confident
+
+  p "Bros!"
+
+  s "Listen up, Defenders of Neon! I think it’s time we go back and play an old classic."
+
+  s "How about our first ever hit?"
+
+  c "Let’s do it!"
+
+  s "Then count us in, Crash."
+
+  show crash happy
+
+  c "And a one and a two and a…!"
+
+  play sound phase_instrument_sfx loop fadein 0.5 fadeout 1.0
+  pause 3.0
+
+  show limiter angry
+
+  l "No, no, no, NO! I won’t be foiled so easily again by you hacks."
+
+  l "My precious drone goo! You’re making it go all soft and flaccid."
+
+  b "Looks like it’s working. The goo is retreating off of Phase. Think you can play along with us?"
+
+  show phase happy
+
+  p "You’re going to let me jam with you again?"
+
+  show swage normal
+
+  s "We need you, bro. And you need us. You know your part, just come in on your queue."
+
+  p "I’m on it!"
+
+  c "Here it comes!"
+
+  play sound guitar_riff_sfx fadein 0.5 loop
+
+  show limiter sad:
+    on hide:
+        rotate 0
+        alpha 1.0
+        easein 3.0 rotate -720 xpos -1.5 alpha 0.0
+
+  l "It’s too awesome! Grrrrrrr, curse you, Defenders of Neon! I’ll be back! And you’ll all be begging to join my drones the next time!"
+
+  window hide
+  pause 0.5
+  hide limiter
+  pause 2.0
+  stop sound
+  window auto
+
+  show phase normal at left, Transform(xalign=0.2, xzoom=1) with move
+
+  show boost normal at right, Transform(xalign=0.6, xzoom=-1) with moveinright
+  show swage normal at right, Transform(xalign=0.775, xzoom=-1) with moveinright
+  show crash normal at right, Transform(xalign=1.0, xzoom=-1) with moveinright
+
+
+  play music mall_theme fadein 0.5 fadeout 0.5
+
+  show phase sad
+
+  p "Bros…. Thanks."
+
+  b "Let’s give em a moment, Crash."
+
+  c "Eh? What for?"
+
+  b "Come on, pedalhead."
+
+  hide boost with dissolve
+  hide crash with dissolve
+
+  c "Boost, whyyyyy..."
+
+  show swage normal
+
+  s "Look, man, I just wanna say…."
+
+  p "No, dude, I gotta speak first…."
+
+  s "Nah, bro. You don’t gotta say anything…."
+
+  p "Just let me get my say in. It’s just that…."
+
+  "Swage and Phase" "I'm sorry."
+
+  show swage happy
+  show phase happy
+
+  "Swage and Phase" "Hahahahaha"
+
+  s "Guess we both needed to take our headphones off for a bit there."
+
+  p "I got so stuck inside my own head, I forgot that it’s more than just about being in the spotlight."
+
+  p "It’s only through playing with my bros that I can make this keytar sing."
+
+  p "I shouldn’t have tried to go solo like that."
+
+  s "Me and the bros talked about it a bit, and we realized we hadn’t exactly been giving you enough praise."
+
+  s "You’re the leader. You put up with a lot of thankless tasks and shoulder a lot of responsibility."
+
+  s "If I’d been willing to hear you out, there never would have been this split in the first place."
+
+  show phase sad
+
+  p "You don’t have to be saying that just to try and fluff up my ego, dude. I messed up."
+
+  p "I really thought that after taping into the Heart Machine like that, I’d be the best musician ever."
+
+  p "It was like… hitting the perfect chord, with amazing acoustics, and it just sounded so good."
+
+  p "But it kept echoing in my head and I guess it pushed out all the other important things."
+
+  p "Like how we’re a band, and we have to be there and play together if we really wanna make the best music we can."
+
+  p "I need my bros."
+
+  s "We need you, bro."
+
+  show boost normal at center, Transform(xzoom=-1) zorder 3 with dissolve
+
+  b "And the moral of today’s story is: listening is an important part of communication."
+
+  "Phase and Swage" "Huh?"
+
+  show boost sad
+
+  b "Ugh... never mind."
+
+  hide boost with dissolve
+
+  show phase normal
+  show swage normal
+
+  p "Boost was right about the Heart Machine. But I should have listened to his warning, too."
+
+  p "Next time, I’ll listen to him before going off on my own like that."
+
+  b "Finally! Some recognition of my own!"
+
+  p "I gotta make it up to my bros. I’ll practice extra hard. Double the length of my jam sessions."
+
+  p "And if you ever see me tone shifting like that again, just give me a smack in the head."
+
+  s "Hah! Your pops would string me up by my own bass if he ever caught me doing something like that."
+
+  s "But how about instead we just make sure that you actually get a thank you on the regular."
+
+  s "Next time, let’s keep our tempers a little cooler. That should keep the discord at bay."
+
+  p "It’s a deal."
+
+  show phase happy
+
+  p "So? How about it? We get in a practice session now, and head to the arcade after?"
+
+  p "Jeff showed me an awesome new game. You gotta try it!"
+
+  show swage happy
+
+  s "Sure thing, bro. Sounds like a great time."
+
+  jump a2_s4
+
+label a2_s4:
+  play music limiter_theme fadein 0.5 fadeout 2.0
+  scene bg limiter base with fade
+
+  show limiter sad at center with dissolve
+
+  $ d1 = "images/Drone/drone_normal.png"
+  $ d2 = "images/Drone/drone_normal.png"
+
+  show d1 at left with moveinleft
+  show d2 at right, Transform(xzoom=-1) with moveinright
+
+  l "Those annoying musicians! They can't keep thwarting me forever."
+
+  show limiter confident
+
+  l "Just they wait and see. I've got a scheme so diabolical, they'll never see it coming."
+
+  "Drones" "Mmmmmmm!"
+
+  l "But first, I need to relax with a nice long soak in the goo pool."
+
+  show boost at center with dissolve
+
+  b "Am I the only one who sees the subtext in all of this?"
+
+  jump end
