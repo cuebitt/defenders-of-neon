@@ -1,6 +1,8 @@
 label a1_s1_comic_panels: 
   # BEGIN COMIC SECTION
   scene bg comic with fade
+  
+  show screen scene_skip_btn("a1_s1_main") with dissolve
 
   show expression Text("Placeholder - comic goes here", xalign=0.5, yalign=0.005, color="#71717a") as top_label with dissolve
 
