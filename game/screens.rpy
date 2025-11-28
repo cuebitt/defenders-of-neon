@@ -299,7 +299,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
-            textbutton "Music Room" action ShowMenu("music_room")
+            textbutton "Cassette Player" action ShowMenu("music_room")
 
         else:
 
@@ -368,10 +368,16 @@ screen main_menu():
     if gui.show_name:
 
         vbox:
+            spacing 10
             style "main_menu_vbox"
 
             text "[config.name!t]":
                 style "main_menu_title"
+            
+            vbox:
+                xalign 1.0
+                text "Season 2, Episode 8" xalign 1.0 textalign 1.0
+                text "{i}Phase's Solo{/i}" xalign 1.0 textalign 1.0
 
             text "[config.version]":
                 style "main_menu_version"
@@ -796,7 +802,7 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         textbutton _("Speech Pauses") action ToggleField(persistent,"speech_pauses")
-                        
+
                         showif persistent.speech_pauses:
                             vbox at expander:
                                 style_prefix "slider"
