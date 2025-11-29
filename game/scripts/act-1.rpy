@@ -36,8 +36,6 @@ label a1_s1_comic_panels:
   jump a1_s1_main
 
 label a1_s1_main:
-
-  #scene bg Haven Mall
   scene bg mall with fade
   play music phase_theme fadein 0.5 fadeout 0.5
 
@@ -112,6 +110,12 @@ label a1_s1_main:
 
   p "Did you catch that? I sent that tone deaf loser packing without even breaking a sweat. Told you I’d be able to do it. I never doubted myself for a beat."
 
+  "{i}The gator emphasizes on his own invisible keytar, making rad mouth sounds to imitate the performance. Phase fist bumps him in the shared excitement{/i}"
+
+  c "Dude! That was totally AWESOME!!! You rocked him out of this world with that keytar riff!"
+
+  p "You know it, big man!"
+
   s "We didn’t doubt you could, bro."
 
   c "We just said that it was too dangerous and an unnecessary risk to go off on your own like that."
@@ -121,6 +125,8 @@ label a1_s1_main:
   c "No. This isn’t harmonizing. We have to talk about this. Let’s get a jam session in while we debrief."
 
   p "Wicked. You'll get to hear for yourself just how much better I sound now."
+
+  "{i}Swage drags his hand down his own face while sighing, clearly thrilled for the future conversation.{/i}"
 
   jump a1_s2
 
@@ -172,6 +178,8 @@ label a1_s2:
 
   p "It’s all sweet, Jeff. We’ll hang with you later!"
 
+  c "See ya’! Lemme know if you need help with the arcade later!"
+
   hide jeff with moveoutright
 
   scene bg mall with fade
@@ -189,7 +197,7 @@ label a1_s2:
 
   p "I can take it all the way to 11 easily."
 
-  c "It was risky, Phase. Too risky. What if it hadn’t worked?"
+  s "It was risky, Phase. Too risky. What if it hadn’t worked?"
 
   b "Even with all my testing and sampling, I wasn’t totally convinced it would work."
 
@@ -199,9 +207,11 @@ label a1_s2:
 
   p "Hey hey hey! I {b}am{/b} the big hero here!"
 
-  c "It was stupid, Phase! Your big hero moment doesn’t need to come at the cost of putting us in danger!"
+  s "It was stupid, Phase! Your big hero moment doesn’t need to come at the cost of putting us in danger!"
 
   p "I’m not sure what you aren’t vibing with here, Crash. You weren’t in any danger because I was always going to come in and save the day."
+
+  c "Uhhh, yeah but-"
 
   c "We were half way to being turned into drones, and you say that we weren’t in any danger. Do you hear yourself when you say things like that?"
 
@@ -228,6 +238,18 @@ label a1_s2:
   p "Why do you keep needing me to explain this to you? You weren’t in danger! I was always going to be there to push Limiter back."
 
   p "Tapping into the Heart Machine has radicalized my sound. I can take on Limiter any day he tries to ruin our show."
+
+  s "Why do {b}YOU{/b} keep needing me to explain this to you! You’re a selfish meathead Phase! And someone is going to get hurt because of your stupidity!"
+
+  s "I dont even get why your father would trust such a {b}BRAT{/b} to lead this band in the first place!"
+
+  "{i}The whole room gasps.{/i}"
+
+  "{i}Phase's jaw drops in shock{/i}"
+
+  s "It’s the truth. If you wanna play solo, Go solo."
+
+  p "Oh y-yeah well...I think I just proved I could, and that you're just the backup to my show!"
 
   p "Maybe it’s you who isn't trusting me, thinking that I wouldn’t be there."
 
