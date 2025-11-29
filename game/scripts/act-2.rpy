@@ -37,7 +37,7 @@ label a2_s1:
 
   show crash angry
 
-  c "Well it’s not like you’re doing any better than us!"
+  b "Well it’s not like you’re doing any better than us!"
 
   show boost angry
 
@@ -183,6 +183,10 @@ label a2_s1:
 
   s "And though I miss the older guy, his younger treble maker of a son knows how to put on a good proper show."
 
+  s "But he didn’t have to make it all about himself, you know?"
+
+  s "He wouldn’t even have center stage if we weren’t there."
+
   show crash sad
 
   c "But he didn’t have to make it all about himself, you know?"
@@ -211,7 +215,7 @@ label a2_s1:
 
   b "Phase is over confident. But he’s also got a point."
 
-  b "The fans think you’re the leader here, Swage."
+  b "Yeah, the fans think you’re the leader here, Swage."
 
   show swage shocked
 
