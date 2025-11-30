@@ -1599,7 +1599,7 @@ default scene_skip_enabled = True
 screen scene_skip_btn(dest_label):
     if scene_skip_enabled:
         imagebutton auto "gui/skip_scene/skip_cassette_%s.png":
-            align (0.02, 0.02)
+            align (0.02, 0.98)
             at skip_cassette
             action [ 
                 SetVariable("scene_skip_enabled", False),

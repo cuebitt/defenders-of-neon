@@ -46,6 +46,8 @@ label a1_s1_main:
 
   show phase normal at center zorder 10 with moveinleft
 
+  "{i}Phase enters the scene, brandishing his keytar which glows with anticipation.{/i}"
+
   p "Hate to slow your tempo, Limiter, but you won’t be getting your dirty coils around the Heart Machine today!"
 
   s "Phase!"
@@ -54,11 +56,13 @@ label a1_s1_main:
 
   b "Oh. Yay, I guess."
 
-  p "Time to send you back to the coda with a sick riff."
+  p "Time to send you back to the coda with a {i}sick{/i} riff."
 
   $ prev_mus_vol = _preferences.get_volume('music')
   $ renpy.music.set_volume(prev_mus_vol * 0.25, delay=1.0, channel="music")
   play sound phase_instrument_sfx loop
+
+  "{i}His fingers dance along the keys with style and grace, reverberating through the hearts of all those around to hear as energy lashes out at the villains ooze.{/i}"
 
   c "The goo is retreating!"
 
@@ -103,11 +107,11 @@ label a1_s1_main:
 
   b "Sure, just like you said last episode. Whatever. Later, snake. Until the next one."
 
-  p "Did you catch that? I sent that tone deaf loser packing without even breaking a sweat. Told you I’d be able to do it. I never doubted myself for a beat."
+  p "Did you catch that? I sent that tone deaf loser packing without even breaking a {i}sweat{/i}. Told you I’d be able to do it. I never doubted myself for a beat."
 
-  "{i}The gator emphasizes on his own invisible keytar, making rad mouth sounds to imitate the performance. Phase fist bumps him in the shared excitement{/i}"
+  c "Dude! That was totally AWESOME!!! You rocked him out of this world with that riff!"
 
-  c "Dude! That was totally AWESOME!!! You rocked him out of this world with that keytar riff!"
+  "{i}The gator emphasizes on his own invisible keytar, making rad mouth sounds to imitate the performance. Phase fist bumps him in the shared excitement.{/i}"
 
   p "You know it, big man!"
 
@@ -156,7 +160,7 @@ label a1_s2:
 
   j "Tell you what, give it a go. It’s free today."
 
-  show crash normal at left, Transform(xalign=0.15) with moveinleft
+  show crash normal at left, Transform(xalign=0.0) with moveinleft
   pause 0.5
   show phase normal at up_lean
   c "You tell us they are all free every day we come over."
@@ -243,6 +247,8 @@ label a1_s2:
 
   "{i}Phase's jaw drops in shock{/i}"
 
+  c "That’s… that’s nasty."
+
   s "It’s the truth. If you wanna play solo, Go solo."
 
   p "Oh y-yeah well...I think I just proved I could, and that you're just the backup to my show!"
@@ -250,8 +256,6 @@ label a1_s2:
   p "Maybe it’s you who isn't trusting me, thinking that I wouldn’t be there."
 
   p "Maybe you’re the ones holding me back from reaching stardom."
-
-  c "That’s… that’s nasty."
 
   s "So what? You want to go solo now?"
 
@@ -291,7 +295,7 @@ label a1_s3:
 
   "Meanwhile, deep inside Limiter's evil lair..."
 
-  play music limiter_lair fadein 1.5 fadeout 0.5
+  play music limiters_lair fadein 1.5 fadeout 0.5
 
   scene bg limiter base with fade
   show limiter normal at center with dissolve
