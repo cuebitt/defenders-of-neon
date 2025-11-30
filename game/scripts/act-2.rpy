@@ -592,7 +592,7 @@ label a2_s3:
 
   show phase shocked
 
-The drones pin and restrain the helpless buck, spreading goo all over his body, inch by inch.
+  "The drones pin and restrain the helpless buck, spreading goo all over his body, inch by inch."
 
   p "Oh, bogus! Come on, if I can just play again, I’m sure I can…."
 
@@ -768,7 +768,7 @@ The drones pin and restrain the helpless buck, spreading goo all over his body, 
 
   s "We need you, bro."
 
-They look into each other’s eyes- err, eye? -And share a moment of bromance together.
+  "They look into each other’s eyes- err, eye? -And share a moment of bromance together."
 
   show boost normal at center, Transform(xzoom=-1) zorder 3 with dissolve
 
