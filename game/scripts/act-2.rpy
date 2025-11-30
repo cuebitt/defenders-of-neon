@@ -41,9 +41,9 @@ label a2_s1:
 
   show boost angry
 
-  b "This feud is tearing us apart!!"
+  c "This feud is tearing us apart!!"
 
-  b "And it’s only been fifteen minutes since Phase left."
+  b "Ugh, you’re right. And it’s only been fifteen minutes since Phase left."
 
   s "What did I tell you about saying his name around these parts?"
 
@@ -126,7 +126,7 @@ label a2_s1:
 
   show crash sad
 
-  c "Give me a break, Swage. I’m still the newest member here. Since you’re the leader, shouldn’t you also be the vocalist?"
+  c "Give me a break, Swage. I’m still the newbie here. Since you’re the leader, shouldn’t you also be the vocalist?"
 
   show swage normal
 
@@ -187,9 +187,9 @@ label a2_s1:
 
   show crash sad
 
-  c "But he didn’t have to make it all about himself, you know?"
+  s "But he didn’t have to make it all about himself, you know?"
 
-  c "He wouldn’t even have center stage if we weren’t there."
+  s "He wouldn’t even have center stage if we weren’t there."
 
   show swage angry
 
@@ -219,7 +219,7 @@ label a2_s1:
 
   s "Me? Well, I guess I’ve been a member of the band the longest."
 
-  b "Exactly. And they love Crash for his newbie status."
+  b "Exactly. And they love Crash for his baby boy status."
 
   show crash confident
 
@@ -452,7 +452,7 @@ label a2_s2: # fourth scene, second scene in act 2
   
   j "One thing really caught my attention though. A poster on the wall."
   
-  j "’Friendship and Excellence’."
+  j "{i}’Friendship and Excellence’.{/i}"
 
   show phase normal
 
@@ -591,6 +591,8 @@ label a2_s3:
   play sound splat_sfx
 
   show phase shocked
+
+The drones pin and restrain the helpless buck, spreading goo all over his body, inch by inch.
 
   p "Oh, bogus! Come on, if I can just play again, I’m sure I can…."
 
@@ -746,6 +748,10 @@ label a2_s3:
 
   s "If I’d been willing to hear you out, there never would have been this split in the first place."
 
+  s "I was also a massive jerk… I shouldnt have tore into you like that, dude. And I especially shouldnt have brought up your father."
+
+  s "If your old man were still here he would be proud of how far you’ve come. "
+
   show phase sad
 
   p "You don’t have to be saying that just to try and fluff up my ego, dude. I messed up."
@@ -754,13 +760,15 @@ label a2_s3:
 
   p "It was like… hitting the perfect chord, with amazing acoustics, and it just sounded so good."
 
-  p "But it kept echoing in my head and I guess it pushed out all the other important things."
+  p "But it kept echoing in my head, and I guess it pushed out all the other important things."
 
   p "Like how we’re a band, and we have to be there and play together if we really wanna make the best music we can."
 
   p "I need my bros."
 
   s "We need you, bro."
+
+They look into each other’s eyes- err, eye? -And share a moment of bromance together.
 
   show boost normal at center, Transform(xzoom=-1) zorder 3 with dissolve
 
