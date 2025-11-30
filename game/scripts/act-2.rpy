@@ -530,13 +530,13 @@ label a2_s3:
 
   show limiter normal at left with moveinleft
 
-  $ d1 = "images/Drone/drone_normal.png"
-  $ d2 = "images/Drone/drone_normal.png"
-  $ d3 = "images/Drone/drone_normal.png"
+#   $ d1 = "images/Drone/drone_normal.png"
+#   $ d2 = "images/Drone/drone_normal.png"
+#   $ d3 = "images/Drone/drone_normal.png"
 
-  show d1 at left, Transform(xalign=0.15) with moveinleft
-  show d2 at left, Transform(xalign=0.3) with moveinleft
-  show d3 at left, Transform(xalign=0.45) with moveinleft
+#   show d1 at left, Transform(xalign=0.15) with moveinleft
+#   show d2 at left, Transform(xalign=0.3) with moveinleft
+#   show d3 at left, Transform(xalign=0.45) with moveinleft
 
   show limiter confident
 
@@ -589,9 +589,9 @@ label a2_s3:
 
   l "Mwehehehehe! It’s going to feel so good, watching you get dronified."
 
-  show d1 at left, Transform(xalign=-0.25) with move
-  show d2 at left, Transform(xalign=-0.1) with move
-  show d3 at left, Transform(xalign=0.05) with move
+#   show d1 at left, Transform(xalign=-0.25) with move
+#   show d2 at left, Transform(xalign=-0.1) with move
+#   show d3 at left, Transform(xalign=0.05) with move
 
   show limiter normal at center, Transform(xalign=0.45) with move
 
@@ -605,7 +605,6 @@ label a2_s3:
 
   "Drones" "Mmmmmmmmmmm!!"
 
-  # TODO Music fight theme
   play music defenders_of_neon_theme_loop fadein 0.5 fadeout 1.0
 
   s "Hate to slow your tempo, Limiter…."
@@ -614,10 +613,9 @@ label a2_s3:
 
   b "Nice call back, guys. A little forced, but it worked."
 
-  hide d1 with dissolve
-  hide d2 with dissolve
-  hide d3 with dissolve
-  
+#   hide d1 with dissolve
+#   hide d2 with dissolve
+#   hide d3 with dissolve
 
   show limiter shocked at left, Transform(xalign=-.25) with move
 
@@ -806,11 +804,11 @@ label a2_s4:
 
   show limiter sad at center with dissolve
 
-  $ d1 = "images/Drone/drone_normal.png"
-  $ d2 = "images/Drone/drone_normal.png"
+#   $ d1 = "images/Drone/drone_normal.png"
+#   $ d2 = "images/Drone/drone_normal.png"
 
-  show d1 at left with moveinleft
-  show d2 at right, Transform(xzoom=-1) with moveinright
+#   show d1 at left with moveinleft
+#   show d2 at right, Transform(xzoom=-1) with moveinright
 
   l "Those annoying musicians! They can't keep thwarting me forever."
 
