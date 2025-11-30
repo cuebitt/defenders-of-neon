@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="game/gui/window_icon.png" alt="Defenders of Neon">
+  <img src="game/gui/title_bg.png" alt="Defenders of Neon">
 </p>
 
 # Defenders of Neon
@@ -38,13 +38,3 @@ Or download:
 ### Programming
 
 - [Cuebitt](https://bsky.app/profile/cuebitt.rip)
-
-## TODO remove this later
-
-Replace the assets:
-
-- [ ] `game/gui/main_menu.png`
-
-## License
-
-[MIT](LICENSE)
