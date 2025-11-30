@@ -350,20 +350,64 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+style center_align:
+    xalign 0.5
+
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    #add gui.main_menu_background
+    add "gui/title_bg.png"
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+
+
+    vbox:
+        at Transform(xalign=0.825, yalign=0.55)
+
+        textbutton _("Start"):
+            action Start()
+            xalign 0.5
+
+        textbutton "Cassette Player":
+            action ShowMenu("music_room")
+            xalign 0.5
+
+        textbutton _("Load"):
+            action ShowMenu("load")
+            xalign 0.5
+
+        textbutton _("Preferences"):
+            action ShowMenu("preferences")
+            xalign 0.5
+
+        textbutton _("About"):
+            action ShowMenu("about")
+            xalign 0.5
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help"):
+                action ShowMenu("help")
+                xalign 0.5
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            textbutton _("Quit"):
+                action Quit(confirm=not main_menu)
+                xalign 0.5
+
+
 
     if gui.show_name:
 
@@ -371,8 +415,8 @@ screen main_menu():
             spacing 10
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+            # text "[config.name!t]":
+            #     style "main_menu_title"
             
             vbox:
                 xalign 1.0
