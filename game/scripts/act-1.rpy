@@ -300,8 +300,8 @@ label a1_s3:
   scene bg limiter base with fade
   show limiter normal at center with dissolve
   pause 0.5
-  image d0 = "images/Drone/drone_normal.png"
-  show d0 at left, Transform(xalign=0.15) with dissolve
+  #image d0 = "images/Drone/drone_normal.png"
+  #show d0 at left, Transform(xalign=0.15) with dissolve
 
   l "Well well well…. Isn’t this an interesting result."
 
@@ -329,16 +329,16 @@ label a1_s3:
 
   # Add three more drones here, two on the left and one on the right
 
-  image d1 = "images/Drone/drone_normal.png"
-  image d2 = "images/Drone/drone_normal.png"
-  image d3 = "images/Drone/drone_normal.png"
+  #image d1 = "images/Drone/drone_normal.png"
+  #image d2 = "images/Drone/drone_normal.png"
+  #image d3 = "images/Drone/drone_normal.png"
 
-  show d1 at left, Transform(xalign=-0.15) with dissolve
-  pause 0.2
-  show d2 at right, Transform(xalign=0.75) with dissolve
-  pause 0.2
-  show d3 at right, Transform(xalign=1.05) with dissolve
-  pause 0.2
+  #show d1 at left, Transform(xalign=-0.15) with dissolve
+  #pause 0.2
+  #show d2 at right, Transform(xalign=0.75) with dissolve
+  #pause 0.2
+  #show d3 at right, Transform(xalign=1.05) with dissolve
+  #pause 0.2
 
   "Drones" "Mmhmmm!"
 
