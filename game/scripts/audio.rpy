@@ -115,7 +115,8 @@ init python:
         "phase_keytar_solo": {
             "title": "Keytar Solo",
             "artist": "KOMODOMODE",
-            "file": "audio/bgm/komodomode/phase_solo_riff.ogg"
+            "file": "audio/bgm/komodomode/phase_solo_riff.ogg",
+            "album_art": ""
         }
     }
 
