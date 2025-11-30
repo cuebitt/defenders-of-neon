@@ -1,7 +1,7 @@
 label a2_s1:
   scene bg mall with fade
 
-  play music mall_theme fadein 0.5 fadeout 0.5
+  play music haven_mall_vaporwave fadein 0.5 fadeout 0.5
 
   show swage normal at left, Transform(xalign=0.15) with moveinleft
   pause 0.25
@@ -15,7 +15,7 @@ label a2_s1:
   s "Alright, bros, let’s take it from the top."
 
   # Sfx music that’s just slightly off, lacking melody
-  play music defenders_theme_distorted fadein 0.25 fadeout 1.5
+  play music band_practice fadein 0.25 fadeout 1.5
   s "One! Two! Three and Four!"
   window hide
 
@@ -33,7 +33,7 @@ label a2_s1:
   stop music fadeout 0.5
   pause 0.5
 
-  play music mall_theme
+  play music haven_mall_vaporwave
 
   show crash angry
 
@@ -83,13 +83,11 @@ label a2_s1:
   show boost normal
   show crash normal
 
-  # Sfx bad music AND bird squaking
-  play music defenders_theme_distorted fadeout 0.25
   s "Take it from the top! One, two, three and four!"
 
-  window hide
+  play music band_practice_bird_vocals fadeout 0.25
 
-  play sound crow_caw_sfx loop
+  window hide
 
   pause 5.0
 
@@ -100,7 +98,7 @@ label a2_s1:
   pause 0.5
   stop sound fadeout 1.0
 
-  play music mall_theme fadein 0.5 fadeout 0.5
+  play music haven_mall_vaporwave fadein 0.5 fadeout 0.5
 
   window auto
 
@@ -152,7 +150,7 @@ label a2_s1:
   s "Take it from the top! One, two, three and four!"
 
   # BGM bad music
-  play music defenders_theme_distorted fadeout 0.25
+  play music band_practice fadeout 0.25
 
   show boost sad
   show crash confident
@@ -162,7 +160,7 @@ label a2_s1:
   "..."
   
   stop music fadeout 1.0
-  play music mall_theme fadein 0.5 fadeout 0.5
+  play music haven_mall_vaporwave fadein 0.5 fadeout 0.5
 
   b "We’re all going to die."
 
@@ -292,7 +290,7 @@ label a2_s2: # fourth scene, second scene in act 2
   
   scene bg arcade with fade
 
-  play music arcade_theme fadein 0.5 fadeout 0.5
+  play music jeffs_funky_beatz fadein 0.5 fadeout 0.5
   
   show phase normal at center with moveinleft
 
@@ -528,7 +526,7 @@ label a2_s2: # fourth scene, second scene in act 2
 label a2_s3:
   scene bg mall with fade
 
-  play music limiter_theme fadein 0.5 fadeout 0.5
+  play music get_zonked fadein 0.5 fadeout 0.5
 
   show limiter normal at left with moveinleft
 
@@ -608,7 +606,7 @@ label a2_s3:
   "Drones" "Mmmmmmmmmmm!!"
 
   # TODO Music fight theme
-  play music phase_theme fadein 0.5 fadeout 1.0
+  play music defenders_of_neon_theme_loop fadein 0.5 fadeout 1.0
 
   s "Hate to slow your tempo, Limiter…."
 
@@ -669,7 +667,7 @@ label a2_s3:
 
   c "Here it comes!"
 
-  play sound guitar_riff_sfx fadein 0.5 loop
+  play music phase_keytar_solo fadeout 1.0
 
   show limiter sad:
     on hide:
@@ -693,7 +691,7 @@ label a2_s3:
   show crash normal at right, Transform(xalign=1.0, xzoom=-1) with moveinright
 
 
-  play music mall_theme fadein 0.5 fadeout 0.5
+  play music defenders_of_neon_theme_bromance_loop fadein 0.5 fadeout 0.5
 
   show phase sad
 

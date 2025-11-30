@@ -6,7 +6,7 @@ label a1_s1_comic_panels:
 
   show expression Text("Placeholder - comic goes here", xalign=0.5, yalign=0.005, color="#71717a") as top_label with dissolve
 
-  play music peril_theme fadein 0.5 fadeout 0.5
+  play music get_zonked fadein 0.5 fadeout 0.5
 
   show swage normal at left with moveinleft # temp: replace with comic panels
 
@@ -38,7 +38,7 @@ label a1_s1_comic_panels:
 
 label a1_s1_main:
   scene bg mall with fade
-  play music phase_theme fadein 0.5 fadeout 0.5
+  play music defenders_of_neon_theme_loop fadein 0.5 fadeout 0.5
 
   show limiter normal at right, Transform(xzoom=-1) with moveinright:
     on hide:
@@ -63,7 +63,7 @@ label a1_s1_main:
   p "Time to send you back to the coda with a sick riff."
 
   $ prev_mus_vol = _preferences.get_volume('music')
-  $ renpy.music.set_volume(prev_mus_vol * 0.5, delay=1.0, channel="music")
+  $ renpy.music.set_volume(prev_mus_vol * 0.25, delay=1.0, channel="music")
   play sound phase_instrument_sfx loop
 
   c "The goo is retreating!"
@@ -133,7 +133,7 @@ label a1_s1_main:
 
 label a1_s2:
   scene bg arcade with fade
-  play music arcade_theme fadein 0.5 fadeout 0.5
+  play music jeffs_arcade fadein 0.5 fadeout 0.5
 
   show phase normal at left, Transform(xalign=.25) with moveinleft
   show jeff normal at right, Transform(xzoom=-1) with moveinright
@@ -185,7 +185,7 @@ label a1_s2:
   hide jeff with moveoutright
 
   scene bg mall with fade
-  play music mall_theme fadein 0.5 fadeout 0.5
+  play music haven_mall fadein 0.5 fadeout 0.5
 
   show phase normal at left, Transform(xalign=.1) with moveinleft
 
@@ -297,7 +297,7 @@ label a1_s3:
 
   "Meanwhile, deep inside Limiter's evil lair..."
 
-  play music limiter_theme fadein 1.5 fadeout 0.5
+  play music limiter_lair fadein 1.5 fadeout 0.5
 
   scene bg limiter base with fade
   show limiter normal at center with dissolve
