@@ -191,4 +191,4 @@ screen music_room():
         add "gui/music_room/cassette_thing.png":
             align (.6, -.2125)
     on "replace" action [Stop("music"), Function(enter_music_room)]
-    on "replaced" action Play("music", "audio/bgm/cafe-restaurant-bossa-nova-music.ogg")
+    on "replaced" action Play("music", "audio/bgm/komodomode/defenders_of_neon_theme.ogg")

@@ -583,9 +583,9 @@ screen about():
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
 
             text _("The following third-party modules are used:\n")
-            text _("{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight{/a} and {a=https://wattson.itch.io/kinetic-text-tags}Ren'Py Kinetic Text Tags{/a} by Wattson")
+            text _("{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight by Wattson")
             text _("{a=https://kigyo.itch.io/speech-pauses-for-renpy}Speech Pauses for Ren'Py{/a} by KigyoDev")
-            text _("{a=https://naoimh-murchan.itch.io/renpy-inline-tooltips}Ren'Py Inline Tooltips{/a} by Naoimh Murchan")
+            text _("{a=https://berinrin.itch.io/audiofilter-templates-for-renpy}Audio Filter Templates for Ren'Py{/a} by Berin")
 
 
 style about_label is gui_label
