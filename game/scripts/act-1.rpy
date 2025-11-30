@@ -141,11 +141,11 @@ label a1_s1_main:
 
   s "We didn’t doubt you could, bro."
 
-  c "We just said that it was too dangerous and an unnecessary risk to go off on your own like that."
+  b "We just said that it was too dangerous and an unnecessary risk to go off on your own like that."
 
   p "Well it all worked out. So there’s nothing to worry about."
 
-  c "No. This isn’t harmonizing. We have to talk about this. Let’s get a jam session in while we debrief."
+  s "No. This isn’t harmonizing. We have to talk about this. Let’s get a jam session in while we debrief."
 
   p "Wicked. You'll get to hear for yourself just how much better I sound now."
 
@@ -237,7 +237,7 @@ label a1_s2:
 
   c "Uhhh, yeah but-"
 
-  c "We were half way to being turned into drones, and you say that we weren’t in any danger. Do you hear yourself when you say things like that?"
+  s "We were half-way to being turned into drones, and you say that we weren’t in any danger. Do you hear yourself when you say things like that?"
 
   p "Of course. I hear my singing being the thing that got Limiter out of our fur again."
 
