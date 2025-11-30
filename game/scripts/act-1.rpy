@@ -1,36 +1,30 @@
 label a1_s1_comic_panels: 
   # BEGIN COMIC SECTION
-  scene bg comic with fade
-  
-  show screen scene_skip_btn("a1_s1_main") with dissolve
 
-  show expression Text("Placeholder - comic goes here", xalign=0.5, yalign=0.005, color="#71717a") as top_label with dissolve
+  show screen scene_skip_btn("a1_s1_main") with dissolve
 
   play music get_zonked fadein 0.5 fadeout 0.5
 
-  show swage normal at left with moveinleft # temp: replace with comic panels
+  scene bg comic 0 0 at Transform(zoom=0.64) with fade
 
-  s "This is bad, bros."
+  pause 5.0
+  pause
 
-  show crash normal at left, Transform(xalign=0.15) with moveinleft # temp: replace with comic panels
+  scene bg comic 0 1 at Transform(zoom=0.64) with fade
 
-  c "Seems like this might be our closing act."
+  pause 5.0
+  pause
 
-  show boost normal at left, Transform(xalign=0.4) with moveinleft # temp: replace with comic panels
+  scene bg comic 0 2 at Transform(zoom=0.64) with fade
 
-  b "It does feel kind of good, though."
+  pause 5.0
+  pause
 
-  show limiter normal at right, Transform(xzoom=-1) with moveinright: # temp: replace with comic panels
-    on hide:
-      rotate 0
-      alpha 1.0
-      easein 3.0 rotate 720 xpos 1.5 alpha 0.0
+  scene bg comic 0 3 at Transform(zoom=0.64) with fade
 
-  l "Mwehehehe! At last! You’ll all be turned into my mindless drones!"
-
-  l "And with you half rate musicians out of the way, the Heart Machine will finally be mine!"
-
-  hide top_label with dissolve
+  pause 5.0
+  pause
+  
   $ scene_skip_enabled = False
 
   # END COMIC SECTION
