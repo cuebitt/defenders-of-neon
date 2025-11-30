@@ -281,11 +281,11 @@ label a1_s2:
 
   c "Phase!! Dudes!! Calm down!"
 
-  s “C’mon Crash, don’t waste your time.”
+  s "C’mon Crash, don’t waste your time."
 
   hide swage with moveoutright
 
-  c “Awww man….”
+  c "Awww man…."
 
   hide crash with moveoutright
 
