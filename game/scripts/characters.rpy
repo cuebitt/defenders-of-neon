@@ -31,14 +31,43 @@ define l = Character(_("Limiter"), color="#534C72", callback=name_callback, cb_n
 define j = Character(_("Jeff"), color="#574A4A", callback=name_callback, cb_name="jeff")
 
 #image phase normal = At('phase_normal', sprite_highlight('phase'))
-image swage normal = At('swage_normal', sprite_highlight('swage'))
-image crash normal = At('crash_normal', sprite_highlight('crash'))
-image boost normal = At('boost_normal', sprite_highlight('boost'))
-image limiter normal = At('limiter_normal', sprite_highlight('limiter'))
-image jeff normal = At('jeff_normal', sprite_highlight('jeff'))
+image swage normal = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+image swage shocked = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+image swage confident = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+image swage sad = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+image swage angry = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+image swage happy = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
+
+image crash normal = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash shocked = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash confident = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash sad = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash angry = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash happy = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+
+image boost normal = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+image boost shocked = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+image boost confident = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+image boost sad = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+image boost angry = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+image boost happy = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
+
+image limiter normal = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, xoffset=100, yoffset=100))
+image limiter confident = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, yoffset=100))
+image limiter shocked = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, yoffset=100))
+image limiter sad = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, yoffset=100))
+image limiter angry = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, yoffset=100))
+image limiter happy = At('cobra_final', sprite_highlight('limiter'), Transform(zoom=.4, yoffset=100))
+
+image jeff normal = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
+image jeff shocked = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
+image jeff confident = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
+image jeff sad = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
+image jeff angry = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
+image jeff happy = At('racoon_final', sprite_highlight('jeff'), Transform(zoom=.35, yoffset=50))
 
 layeredimage phase:
-  at sprite_highlight('phase'), Transform(xzoom=0.45, yzoom=0.45, yoffset=100)
+  at sprite_highlight('phase'), Transform(zoom=0.4, yoffset=100)
   always:
     "images/phase/phase_base.png"
   

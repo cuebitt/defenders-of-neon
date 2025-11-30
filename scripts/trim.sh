@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Trims transparent pixels from each edge of every image in a directory.
 # Requires ImageMagick
 # Usage: ./trim.sh /path/to/images

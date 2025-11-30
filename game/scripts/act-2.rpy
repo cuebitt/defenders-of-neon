@@ -8,7 +8,7 @@ label a2_s1:
 
   show boost normal at right, Transform(xalign=0.6, xzoom=-1) with moveinright
   pause 0.25
-  show crash normal at right, Transform(xalign=0.85, xzoom=-1) with moveinright
+  show crash normal at right, Transform(xalign=1.05, xzoom=-1) with moveinright
 
   show swage confident
 
@@ -71,7 +71,7 @@ label a2_s1:
 
   s "Boost! How about you give us a verse, bro?"
 
-  show boost shock
+  show boost shocked
 
   b "Me?! Okay sure, but you should cover your ears first."
 
@@ -402,7 +402,7 @@ label a2_s2: # fourth scene, second scene in act 2
 
   p "Got into a fight with the guys. They just don’t get it."
 
-  show jeff shock
+  show jeff shocked
 
   j "Not sure I get ‘it’ either, but I’m chill to listen."
 
@@ -621,12 +621,12 @@ label a2_s3:
   hide d3 with dissolve
   
 
-  show limiter shocked at left, Transform(xalign=0.1) with move
+  show limiter shocked at left, Transform(xalign=-.25) with move
 
   show phase shocked zorder 2 at center with move
-  show boost normal at right, Transform(xalign=0.8, xzoom=-1) with moveinright
-  show swage normal at right, Transform(xalign=0.95, xzoom=-1) with moveinright
   show crash normal at right, Transform(xalign=1.2, xzoom=-1) with moveinright
+  show swage normal at right, Transform(xalign=0.85, xzoom=-1) with moveinright
+  show boost normal at right, Transform(xalign=0.7, xzoom=-1) with moveinright
 
   show boost confident
   show swage confident
@@ -824,7 +824,7 @@ label a2_s4:
 
   l "But first, I need to relax with a nice long soak in the goo pool."
 
-  show boost at center with dissolve
+  show boost normal at center with dissolve
 
   b "Am I the only one who sees the subtext in all of this?"
 

@@ -1551,11 +1551,17 @@ transform skip_cassette:
     alpha 0.0
     linear 0.25 alpha 1.0
 
+default scene_skip_enabled = True
 screen scene_skip_btn(dest_label):
-    imagebutton auto "gui/skip_scene/skip_cassette_%s.png":
-        align (0.98, 0.02)
-        at skip_cassette
-        action [Hide("scene_skip_btn"), Jump(dest_label)]
+    if scene_skip_enabled:
+        imagebutton auto "gui/skip_scene/skip_cassette_%s.png":
+            align (0.98, 0.02)
+            at skip_cassette
+            action [ 
+                SetVariable("scene_skip_enabled", False),
+                Hide("scene_skip_btn"),
+                Jump(dest_label)
+                ]
 
 
 ################################################################################

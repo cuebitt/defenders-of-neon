@@ -1,5 +1,6 @@
 transform up_lean:
   # Move the sprite slightly upward
+  xoffset 100
   yoffset 0
   rotate 0
   rotate_pad True
