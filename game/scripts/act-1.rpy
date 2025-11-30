@@ -81,9 +81,7 @@ label a1_s1_main:
 
   p "Time to send you back to the coda with a {i}sick{/i} riff."
 
-  $ prev_mus_vol = _preferences.get_volume('music')
-  $ renpy.music.set_volume(prev_mus_vol * 0.25, delay=1.0, channel="music")
-  play sound phase_instrument_sfx loop
+  play music phase_keytar_solo fadeout 0.5
 
   "{i}His fingers dance along the keys with style and grace, reverberating through the hearts of all those around to hear as energy lashes out at the villains ooze.{/i}"
 
@@ -105,9 +103,6 @@ label a1_s1_main:
 
   p "I know I can. Dig this solo and find out for yourself."
 
-  $ prev_sfx_vol = _preferences.get_volume('sound')
-  $ renpy.music.set_volume(prev_sfx_vol * 1.25, delay=0.5, channel='sound')
-
   p "Match my souped up rhythm if you can, Limiter."
 
   l "Urgh! When did you get so strong?!"
@@ -116,9 +111,7 @@ label a1_s1_main:
 
   l "Gaaaaaaaaaaaah! The groove is too powerful! Curse you, Defenders of Neon!"
 
-  stop sound fadeout 0.5
-  $ renpy.music.set_volume(prev_sfx_vol, delay=0, channel='sound')
-  $ renpy.music.set_volume(prev_mus_vol, delay=1.0, channel="music")
+  play music haven_mall fadein 1.0
 
   hide limiter
 
