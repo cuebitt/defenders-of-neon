@@ -31,6 +31,7 @@ label a1_s1_comic_panels:
   l "And with you half rate musicians out of the way, the Heart Machine will finally be mine!"
 
   hide top_label with dissolve
+  $ scene_skip_enabled = False
 
   # END COMIC SECTION
   jump a1_s1_main
@@ -102,9 +103,9 @@ label a1_s1_main:
 
   l "You may have won this day, but you can’t keep the Haven Mall safe forever! I’ll be back! And you’ll all become a part of my drone army!"
   
-  show boost normal at right, Transform(xalign=.5, xzoom=-1) with moveinleft
-  show crash normal at right, Transform(xalign=.7, xzoom=-1) with moveinleft
   show swage normal at right, Transform(xalign=.9, xzoom=-1) with moveinleft
+  show crash normal at right, Transform(xalign=.7, xzoom=-1) with moveinleft
+  show boost normal at right, Transform(xalign=.5, xzoom=-1) with moveinleft
 
   b "Sure, just like you said last episode. Whatever. Later, snake. Until the next one."
 
@@ -169,8 +170,9 @@ label a1_s2:
   j "Do I? Huh. Well, they are extra free today then."
 
   hide crash with moveoutright
+  show phase normal at left, Transform(xalign=.25, xoffset=0, rotate=0, yoffset=0) with move
   pause 0.1
-  show swage normal at left, Transform(xalign=0.15) with moveinleft
+  show swage normal at left, Transform(xalign=0) with moveinleft
 
   s "We can come back later. We’ve got a jam sesh first."
 
