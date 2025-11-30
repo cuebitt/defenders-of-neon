@@ -287,15 +287,19 @@ label a2_s1:
   jump a2_s2
 
 label a2_s2: # fourth scene, second scene in act 2
-  
+  stop music
   scene bg arcade with fade
-
-  play music jeffs_funky_beatz fadein 0.5 fadeout 0.5
   
   show phase normal at center with moveinleft
 
   # sfx keytar noises, with some off notes
+  play sound phase_instrument_sfx_distorted loop
   "{i}Phase plays his keytar. He misses a few notes.{/i}"
+
+  pause 2.0
+  stop sound
+
+  play music jeffs_funky_beatz fadein 0.5 fadeout 0.5
 
   show phase angry
 
@@ -321,7 +325,9 @@ label a2_s2: # fourth scene, second scene in act 2
 
   p "And maybe SOMEBODY will finally realize that I’m as awesome as I really am."
 
+  stop music
   # Sfx keytar noises, maybe with a bit more anger behind them?
+  play sound phase_instrument_sfx_distorted loop
   "Phase continues angrily playing his keytar."
 
   show phase sad
@@ -335,6 +341,9 @@ label a2_s2: # fourth scene, second scene in act 2
   p "I didn’t even have to think! I just played and the music was perfect."
 
   p "Why can’t I get a good sound out of it this time?"
+
+  stop sound
+  play music jeffs_funky_beatz fadein 0.5 fadeout 0.5
 
   show phase normal at left, Transform(xalign=0.25) with move
   show jeff normal at right, Transform(xalign=0.75, xzoom=-1) with moveinright
