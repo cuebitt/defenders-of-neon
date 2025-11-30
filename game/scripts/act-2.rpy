@@ -37,7 +37,7 @@ label a2_s1:
 
   show crash angry
 
-  b "Well it’s not like you’re doing any better than us!"
+  b "Well, it’s not like you’re doing any better than us!"
 
   show boost angry
 
@@ -263,7 +263,7 @@ label a2_s1:
 
   show crash sad
 
-  c "I don’t think I can remember the last time I said thank you to Phase."
+  c "And while I do always hype up his plays… I never thanked him for that all nighter he pulled. But we always thank you for buying us lunch."
 
   b "You’re right though, Crash. Phase needs us."
 
@@ -801,7 +801,7 @@ label a2_s3:
   jump a2_s4
 
 label a2_s4:
-  play music limiter_theme fadein 0.5 fadeout 2.0
+  play music limiters_lair fadein 0.5 fadeout 2.0
   scene bg limiter base with fade
 
   show limiter sad at center with dissolve

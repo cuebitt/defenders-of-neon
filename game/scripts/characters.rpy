@@ -38,12 +38,12 @@ image swage sad = At('shark_final', sprite_highlight('swage'), Transform(zoom=.3
 image swage angry = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
 image swage happy = At('shark_final', sprite_highlight('swage'), Transform(zoom=.35, yoffset=50))
 
-image crash normal = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
-image crash shocked = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
-image crash confident = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
-image crash sad = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
-image crash angry = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
-image crash happy = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=50))
+image crash normal = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
+image crash shocked = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
+image crash confident = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
+image crash sad = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
+image crash angry = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
+image crash happy = At('gaytor_final', sprite_highlight('crash'), Transform(zoom=.35, yoffset=100))
 
 image boost normal = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
 image boost shocked = At('birb_final', sprite_highlight('boost'), Transform(zoom=.35, yoffset=50))
