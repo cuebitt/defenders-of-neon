@@ -50,7 +50,6 @@ label a1_s1_main:
       rotate 0
       alpha 1.0
       easein 3.0 rotate 720 xpos 1.5 alpha 0.0
-  scene bg comic 0 2 at Transform(zoom=0.64) with fade
 
   l "Mwehehehe! At last! You’ll all be turned into my mindless drones!"
 
