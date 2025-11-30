@@ -32,6 +32,30 @@ label a1_s1_comic_panels:
 
 label a1_s1_main:
   scene bg mall with fade
+
+  show swage normal at left with moveinleft
+
+  s "This is bad, bros."
+
+  show crash normal at left, Transform(xalign=0.15) with moveinleft
+
+  c "Seems like this might be our closing act."
+ 
+  show boost normal at left, Transform(xalign=0.4) with moveinleft
+
+  b "It does feel kind of good, though."
+
+  show limiter normal at right, Transform(xzoom=-1) with moveinright:
+    on hide:
+      rotate 0
+      alpha 1.0
+      easein 3.0 rotate 720 xpos 1.5 alpha 0.0
+  scene bg comic 0 2 at Transform(zoom=0.64) with fade
+
+  l "Mwehehehe! At last! You’ll all be turned into my mindless drones!"
+
+  l "And with you half rate musicians out of the way, the Heart Machine will finally be mine!"
+
   play music defenders_of_neon_theme_loop fadein 0.5 fadeout 0.5
 
   show limiter normal at right, Transform(xzoom=-1) with moveinright:
