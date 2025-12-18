@@ -822,7 +822,8 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("Font")
-                    textbutton _("Default") action gui.SetPreference("font", "DejaVuSans.ttf")
+                    textbutton _("Rubik") action gui.SetPreference("font", "Rubik/Rubik-VariableFont_wght.ttf")
+                    textbutton _("Science Gothic") action gui.SetPreference("font", "Science_Gothic/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf")
                     textbutton _("OpenDyslexic") action  gui.SetPreference("font", "OpenDyslexic3-Regular.ttf")
                     textbutton _("Atkinson Hyperlegible") action gui.SetPreference("font", "AtkinsonHyperlegibleNextVF-Variable.ttf")
 
