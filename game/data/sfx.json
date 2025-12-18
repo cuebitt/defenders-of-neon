@@ -1,0 +1,20 @@
+{
+	"phase_instrument": {
+		"file": "audio/sfx/komodomode/keytar_noises_angry.ogg"
+	},
+	"phase_instrument_distorted": {
+		"file": "audio/sfx/komodomode/keytar_noises_off_notes.ogg"
+	},
+	"inhale_exhale": {
+		"file": "audio/sfx/komodomode/jeff_joint_inhale.ogg"
+	},
+	"siren": {
+		"file": "audio/sfx/komodomode/mall_alarm.ogg"
+	},
+	"record_scratch": {
+		"file": "audio/sfx/record_scratch-108233.ogg"
+	},
+	"splat": {
+		"file": "audio/sfx/cartoon-splat-310479.ogg"
+	}
+}

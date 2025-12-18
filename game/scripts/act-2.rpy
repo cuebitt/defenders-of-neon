@@ -139,7 +139,7 @@ label a2_s1:
   s "So we have to do this, bros. It’s the only way."
 
   b "You could always try and reconcile with Pha-"
-  play sound record_scratch_sfx
+  play sound record_scratch
 
   show swage angry
 
@@ -293,7 +293,7 @@ label a2_s2: # fourth scene, second scene in act 2
   show phase normal at center with moveinleft
 
   # sfx keytar noises, with some off notes
-  play sound phase_instrument_sfx_distorted loop
+  play sound phase_instrument_distorted loop
   "{i}Phase plays his keytar. He misses a few notes.{/i}"
 
   pause 2.0
@@ -327,7 +327,7 @@ label a2_s2: # fourth scene, second scene in act 2
 
   stop music
   # Sfx keytar noises, maybe with a bit more anger behind them?
-  play sound phase_instrument_sfx_distorted loop
+  play sound phase_instrument_distorted loop
   "Phase continues angrily playing his keytar."
 
   show phase sad
@@ -434,7 +434,7 @@ label a2_s2: # fourth scene, second scene in act 2
   j "Hmmmm."
 
   # Sfx of jeff taking a drag
-  play sound inhale_exhale_sfx
+  play sound inhale_exhale
   
   j "You know, when I first started working here, I really looked up to the guy who ran this place."
   
@@ -508,7 +508,7 @@ label a2_s2: # fourth scene, second scene in act 2
 
   p "I dunno, dude. As good as it felt, if it means now I’ve got nobody to jam with, it doesn’t seem worth it."
 
-  play sound siren_sfx
+  play sound siren
 
   show phase shocked
   
@@ -522,7 +522,7 @@ label a2_s2: # fourth scene, second scene in act 2
 
   hide phase with dissolve
 
-  play sound inhale_exhale_sfx
+  play sound inhale_exhale
 
   pause 0.75
 
@@ -573,7 +573,7 @@ label a2_s3:
 
   p "Keep your ears open wide while you choke on this sweet jam."
 
-  play sound phase_instrument_sfx_distorted loop fadeout 0.5
+  play sound phase_instrument_distorted loop fadeout 0.5
 
   show phase sad
 
@@ -588,7 +588,7 @@ label a2_s3:
   stop sound # stop phase keytar
   "Drones" "Mmmmmm!"
 
-  play sound splat_sfx
+  play sound splat
 
   show phase shocked
 
@@ -653,7 +653,7 @@ label a2_s3:
 
   c "And a one and a two and a…!"
 
-  play sound phase_instrument_sfx loop fadein 0.5 fadeout 1.0
+  play sound phase_instrument loop fadein 0.5 fadeout 1.0
   pause 3.0
 
   show limiter angry

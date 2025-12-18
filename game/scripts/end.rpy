@@ -16,7 +16,7 @@ label end:
 
   "Defenders of Neon: Season 2, Episode 8: {i}Phase's Solo{/i} is a game by {a=https://bsky.app/profile/bighufferpuffer.bsky.social}BigHufferPuffer{/a}, {a=https://bsky.app/profile/cuebitt.rip}Cuebitt{/a}, {a=https://bsky.app/profile/grufflo.bsky.social}Grufflo{/a}, {a=https://bsky.app/profile/komodomode.bsky.social}KOMODOMODE{/a}, and {a=https://bsky.app/profile/zevfox.bsky.social}Zev{/a}."
 
-  play sound splat_sfx
+  play sound splat
 
   "Mwehehehehe!"
 
