@@ -49,7 +49,7 @@ jobs:
       # https://www.renpy.org/doc/html/build.html#var-build.itch_channels
       - name: Upload to itch.io
         run: |
-          for i in "web web" "linux.tar.bz2 linux" "mac.zip osx" "win.zip win"
+          for i in "web web" "linux.tar.bz2 linux" "mac.zip osx" "market.zip win-osx-linux" "pc.zip win-linux" "win.zip win"
           do
             set -- $i
             butler push ../dists/$1 ${{ github.repository }}:$2 --userversion-file game/version.txt
