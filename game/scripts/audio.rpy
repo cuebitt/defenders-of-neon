@@ -89,9 +89,28 @@ init python:
     # Add music tracks to music room and audio object
     for track_id, track_data in music_tracks.items():
         if "music_room" in track_data:
-            mr.add(track_data["music_room"])          # add to music room (non-looping)
-        mr.add(track_data["file"])                # add to music room
-        setattr(audio, track_id, track_data["file"])  # add to audio object
+            mr.add(track_data["music_room"])
+        mr.add(track_data["file"])
+        setattr(audio, track_id, track_data["file"])
+
+    _last_playing = None
+
+    def check_and_unlock():
+        global _last_playing
+        playing = renpy.music.get_playing("music")
+        if playing and playing != _last_playing:
+            _last_playing = playing
+            prefix_end = playing.find(">")
+            if prefix_end != -1:
+                playing = playing[prefix_end+1:]
+
+            renpy.game.persistent._seen_audio[str(playing)] = True
+            for track_id, track_data in music_tracks.items():
+                if track_data["file"] == playing and "music_room" in track_data:
+                    renpy.game.persistent._seen_audio[str(track_data["music_room"])] = True
+                    break
+
+    config.interact_callbacks.append(check_and_unlock)
 
 # SFX
 define audio.phase_instrument_sfx = "audio/sfx/komodomode/keytar_noises_angry.ogg"

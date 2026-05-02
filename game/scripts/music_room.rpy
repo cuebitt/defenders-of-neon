@@ -4,6 +4,9 @@
 ##
 ## https://www.renpy.org/doc/html/rooms.html#music-room
 init python:
+    def get_track_path(track):
+        return track.get("music_room", track["file"])
+
     def get_next_track_idx(offset):
         global current_track_idx
 
@@ -13,7 +16,7 @@ init python:
         next_idx = (curr_idx + offset) % len(track_ids)
         track_id = track_ids[next_idx]
 
-        while(not mr.is_unlocked(music_tracks[track_ids[next_idx]]['file'])):
+        while(not mr.is_unlocked(get_track_path(music_tracks[track_ids[next_idx]]))):
             next_idx = (next_idx + offset) % len(track_ids)
             track_id = track_ids[next_idx]
         
@@ -56,7 +59,7 @@ default current_track_idx = -1
 default music_room_paused = True
 
 style music_list_btn:
-    color "#00f0ff"
+    color "#46f3ff"
     hover_color "#8af7ff"
     insensitive_color "#00a4af"
 
@@ -121,7 +124,7 @@ screen music_room():
                                                     
                                                     textbutton f"{track['title']}":
                                                         text_style "music_list_btn"
-                                                        action [mr.Play(track["file"]), SetVariable("current_track_idx", idx), Function(unpause)]
+                                                        action [mr.Play(track.get("music_room", track["file"])), SetVariable("current_track_idx", idx), Function(unpause)]
                                                     text f"{track['artist']}":
                                                         xalign 0.007
                                                         size 24
